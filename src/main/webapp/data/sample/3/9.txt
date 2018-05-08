@@ -1,0 +1,1 @@
+基于Structs基础上的加入Hibernate的例子和ppt，下周课的内容

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <display-name>Archetype Created Web Application</display-name>
+    
+	<servlet>
+        <servlet-name>StarterServlet</servlet-name>
+        <servlet-class>servlet.StarterServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>StarterServlet</servlet-name>
+        <url-pattern>/servlet/StarterServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>QRVServlet</servlet-name>
+        <servlet-class>servlet.QRVServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>QRVServlet</servlet-name>
+        <url-pattern>/servlet/QRVServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetMsgServlet</servlet-name>
+        <servlet-class>servlet.GetMsgServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetMsgServlet</servlet-name>
+        <url-pattern>/servlet/GetMsgServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MsgDisplay</servlet-name>
+        <servlet-class>servlet.MsgDisplay</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MsgDisplay</servlet-name>
+        <url-pattern>/servlet/MsgDisplay</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>  
+        <display-name>DWR Servlet</display-name>  
+        <servlet-name>dwr-invoker</servlet-name>  
+        <servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>  
+        <init-param>  
+            <param-name>debug</param-name>  
+            <param-value>true</param-value>  
+        </init-param>  
+    </servlet>
+    <servlet-mapping>  
+        <servlet-name>dwr-invoker</servlet-name>  
+        <url-pattern>/dwr/*</url-pattern>  
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>servlet.DownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/servlet/DownloadServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>servlet.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/servlet/DeleteServlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/servlet/LogoutServlet</url-pattern>
+    </servlet-mapping> 
+    
+</web-app>
