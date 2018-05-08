@@ -1,5 +1,5 @@
 # qq-group-message-classifier
-A web application that can receive messages and classify them in real time
+A web application that can receive qq group messages and classify them in real time
 ### Development environment
 * Apache tomcat 7.0.77
 * Apache maven 3.3.9
